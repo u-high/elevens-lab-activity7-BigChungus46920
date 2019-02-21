@@ -2,12 +2,21 @@
 
 1. What items would be necessary if you were playing a game of Elevens at your desk (not on the
 computer)? List the private instance variables needed for the ElevensBoard class.
+    All you need is cards
+    Private cards
+    Private values
+
 
 2. Write an algorithm that describes the actions necessary to play the Elevens game.
+
+	if(value1+ value2 == 11) then replace and deal 2x
+	else if ( value1+value2+value3 =0) then replace and deal 3x
+	else don't replace
 
 3. Now examine the partially implemented ElevensBoard.java file found in the Activity7
 Starter Code directory. Does the ElevensBoard class contain all the state and behavior
 necessary to play the game?
+	No it is missing methods like checking for pairs and seeing if another play is possible and checking the players move
 
 4. ElevensBoard.java contains three helper methods. These helper methods are private
 because they are only called from the ElevensBoard class.

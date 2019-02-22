@@ -23,7 +23,7 @@ because they are only called from the ElevensBoard class.
 
 a. Where is the dealMyCards method called in ElevensBoard?
 
-
+When the board is created and when a new game is started
 
 
 
@@ -31,6 +31,7 @@ a. Where is the dealMyCards method called in ElevensBoard?
 b. Which public methods should call the containsPairSum11 and containsJQK
 methods?
 
+Is legal and anotherPlayIsPossible.
 
 
 
@@ -43,11 +44,13 @@ cards. Note that the returned list may have less than 9 elements.
 
 ![My image](https://bsimps3.github.io/Elevens-Lab-Activity7/cards.png)
 
+0/6/2/1/4
+
 d. Complete the following printCards method to print all of the elements of cards that are
 indexed by cIndexes.
     public static printCards(ElevensBoard board) {
     List<Integer> cIndexes = board.cardIndexes();
-             
+    System.out.println(cIndexes);         
   
   
   
@@ -61,3 +64,4 @@ indexed by cIndexes.
   e. Which one of the methods that you identified in question 4b above needs to call the
       cardIndexes method before calling the containsPairSum11 and containsJQK
       methods? Why?
+ anotherPlayIsPossible because the cards on the board need to be checked for possible sums and the null cards need to be removed for the other methods to work.

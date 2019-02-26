@@ -8,7 +8,8 @@ computer)? List the private instance variables needed for the ElevensBoard class
 
 
 2. Write an algorithm that describes the actions necessary to play the Elevens game.
-
+	make a deck
+        shuffle
 	if(value1+ value2 == 11) then replace and deal 2x
 	else if ( value1+value2+value3 =0) then replace and deal 3x
 	else don't replace
